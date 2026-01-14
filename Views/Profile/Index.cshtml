@@ -1,0 +1,33 @@
+﻿@model ApplicationUser
+
+<h2>My Profile</h2>
+
+<div class="card p-3 mb-4">
+    <p><strong>Email:</strong> @Model.Email</p>
+    <p><strong>Username:</strong> @Model.UserName</p>
+    <a asp-area="Identity"
+       asp-page="/Account/Manage/ChangePassword"
+       class="btn btn-warning">
+        Change Password
+    </a>
+
+</div>
+
+<h4>Employees I Created</h4>
+
+<table class="table table-bordered">
+    <tr>
+        <th>Full Name</th>
+        <th>Department</th>
+        <th>Position</th>
+    </tr>
+
+    @foreach (var emp in ViewBag.Employees)
+    {
+        <tr>
+            <td>@emp.FullName</td>
+            <td>@emp.Department</td>
+            <td>@emp.Position</td>
+        </tr>
+    }
+</table>
