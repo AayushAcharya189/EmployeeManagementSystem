@@ -24,7 +24,7 @@ ASP.NET Core MVC application with role-based authentication, employee CRUD opera
 3. Run migrations
 4. Login as Admin
 
-===================================================================== Screenshots ==========================================================================
+=================== Screenshots =================
 
 ### Dashboard
 <img width="1917" height="924" alt="Screenshot 2026-01-14 191215" src="https://github.com/user-attachments/assets/36ed02e5-0b74-40d0-a878-19aca0623140" />
